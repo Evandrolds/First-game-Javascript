@@ -1,0 +1,52 @@
+.personagem{
+    width: 80px;
+    height: 110px;
+    background-image: url(../Mario.png);
+    position: absolute;
+    bottom: 20px;
+}
+
+.enemy{
+    position: absolute;
+    width: 31px;
+    height:38px;
+    bottom: 20px;
+    background-image:url(../inimigo.png) ;
+}
+.game-over{
+    background-color: rgb(15, 32, 49);
+    text-align: center;
+    color: rgb(182, 212, 206);
+    margin:  70px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+@keyframes slideright{
+    from{
+        background-position:  70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+.background_image{
+    position: absolute;
+    bottom: 0;
+    background-image: url(../background_mario.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width:100%;
+    height: 110px;
+}
+.background{
+    float: left;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-image: url(../nuvem.jpg);
+    background-repeat: repeat-x;
+    animation: slideright 2000s infinite linear;
+
+
+}
